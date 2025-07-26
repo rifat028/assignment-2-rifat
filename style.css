@@ -122,7 +122,57 @@ width: 100%;
 .shop-img {
     width: 100%;
 }
-   
+.let-det{
+    margin-bottom: 150px;
+}
+.photo-grid{
+    margin: 150px;
+    display: grid;
+    max-width: 100%;
+    display: flex;
+    gap: 28px;
+}
+.one-two{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr 1fr);
+    gap: 28px;
+}
+.firstL, .firstLn{
+    color: white;
+    font-size: 20 px;
+    font-weight: bold;
+}
+.secondL, .secondLn{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.firstLn{
+    font-size: 40px;
+}
+.secondLn{
+    font-size: 28px;
+}
+.container{
+    position: relative;
+}
+.container img{
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+    filter: brightness(0.5);
+}
+.over-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+#text3{
+    transform: translate(-50%, -350%);
+}
 @media screen and (max-width: 576px) {
     .hide{
         display: none;
@@ -172,6 +222,27 @@ width: 100%;
     .FPlovers{
         margin: 0px 10px;
         display: block;
+    }
+    .photo-grid{
+        margin: 0px 10px;
+    }
+    .firstLn {
+        font-size: 20px;
+    }
+    .secondLn {
+        font-size: 16px;
+    }
+    .container{
+        margin-bottom: 20px;
+    }
+    .let-det{
+        margin-bottom: 50px;
+    }
+    .one-two, .photo-grid{
+        display: block;
+    }
+    #text3{
+        transform: translate(-50%, -50%);
     }
 
 }
