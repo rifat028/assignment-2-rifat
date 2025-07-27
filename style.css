@@ -68,7 +68,7 @@ body{
     text-align: center;
 }
 .card img{
-width: 100%;
+    width: 100%;
 }
 .price{
     font-weight: bold;
@@ -127,15 +127,13 @@ width: 100%;
 }
 .photo-grid{
     margin: 150px;
-    display: grid;
     max-width: 100%;
     display: flex;
     gap: 28px;
-    margin-bottom: -350px;
 }
 .one-two{
     display: grid;
-    grid-template-rows: repeat(2, 1fr 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 28px;
 }
 .firstL, .firstLn{
@@ -170,9 +168,11 @@ width: 100%;
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
+    max-width: 100%;
 }
 #text3{
-    transform: translate(-50%, -300%);
+    transform: translate(-50%, -50%);
+    top: 25%;
 }
 .join{
     margin: 0px auto;
@@ -239,9 +239,19 @@ width: 100%;
     justify-content: end;
     align-items: center;
 }
+.hidden{
+    display: none;
+}
 @media screen and (max-width: 576px) {
     html, body{
         margin: 0px auto;
+    }
+    .hidden{
+        display: inline;
+    }
+    .hidden img{
+        height: 25px;
+        width: 25px;
     }
     .hide{
         display: none;
@@ -254,6 +264,9 @@ width: 100%;
     }
     .header, .banner{
         margin: 30px 0px;
+    }
+    .header{
+        margin: 30px 10px;
     }
     .intro{
         padding: 15px;
@@ -268,7 +281,8 @@ width: 100%;
         font-size: 1rem;
     }
     .item{
-        font-size: 24px;
+        font-size: 1.25rem;
+        margin-right: 10px;
     }
     .nav img{
         width: 18px;
