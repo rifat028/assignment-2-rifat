@@ -210,7 +210,39 @@ width: 100%;
     font-weight: 400;
     border: none;
 }
+.box a{
+    text-decoration: none;
+    color: black;
+    }
+.box{
+    list-style: none;
+}
+.middle ul{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 32px;
+}
+.footer{
+    display: flex;
+    margin: 50px 160px;
+    flex: 1;
+    justify-content: space-between;
+}
+.left p{
+    max-width: 340px;
+}
+.right img{
+    padding-right: 24px;
+}
+.logos{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 @media screen and (max-width: 576px) {
+    html, body{
+        margin: 0px auto;
+    }
     .hide{
         display: none;
     }
@@ -289,6 +321,20 @@ width: 100%;
     .sbtn {
         width: 100px;
         height: 44px;
+    }
+    .middle ul{
+        display: block;
+    }
+    .middle ul li{
+        margin-bottom: 32px;
+    }
+    .footer{
+        display: block;
+        margin: 30px 10px;
+    }
+    .logos{
+        justify-content: flex-start;
+        padding-left: 40px;
     }
 
 }
